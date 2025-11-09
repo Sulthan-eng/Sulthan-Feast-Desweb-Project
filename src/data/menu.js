@@ -2,11 +2,42 @@ export const menu = [
     {
         id: 'appertizer1',
         name: 'Baba Gnaoush',
-        description: '',
+        description: 'Dip terong panggang lembut dengan tahini, bawang putih, lemon, dan minyak zaitun.',
         category: 'Appertizer',
         image: './src/images/menu/appertizer-dessert/baba-gnaoush.jpg',
-        price: 'dip lembut dari terong panggang yang dihaluskan, ' +
-            'dicampur dengan tahini (pasta wijen), bawang putih, perasan lemon, dan minyak zaitun murni. ' +
-            'Disajikan dingin dengan taburan peterseli segar dan sedikit paprika bubuk'
-    }
+        price: 'RP 50.000',
+    },
+    {
+        id: 'appertizer2',
+        name: 'Samosa',
+        description: 'Kulit tipis goreng berisi daging berbumbu dan sayuran, disajikan hangat dengan saus yoghurt mint.',
+        category: 'Appertizer',
+        image: './src/images/menu/appertizer-dessert/samosa.jpeg',
+        price: 'RP 40.000',
+    },
+    {
+        id: 'appertizer3',
+        name: 'Risoles',
+        description: 'Tersedia 2 rasa : isi telur + Bihun dan telur + sosis',
+        category: 'Appertizer',
+        image: './src/images/menu/appertizer-dessert/risol.jpg',
+        price: 'RP 20.000',
+    },
+    {
+        id: 'appertizer4',
+        name: 'Hummus',
+        description: 'Dip lembut dari kacang arab tumbuk dengan tahini, bawang putih, lemon, dan minyak zaitun.',
+        category: 'Appertizer',
+        image: './src/images/menu/appertizer-dessert/hummus.jpeg',
+        price: 'RP 40.000',
+    },
+    {
+        id: 'appertizer5',
+        name: 'Falafel',
+        description: 'Bola goreng renyah dari kacang arab dan rempah khas Timur Tengah, disajikan dengan saus tahini.',
+        category: 'Appertizer',
+        image: './src/images/menu/falafel.jpeg',
+        price: 'RP 35.000',
+    },
+    {},
 ]
