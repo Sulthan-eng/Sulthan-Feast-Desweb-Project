@@ -20,7 +20,16 @@
 
       <div>
         <h3>Media Sosial</h3>
-        <p></p>
+        <a href="#">
+          <span>Instagram</span>
+        </a>
+        <a href="#">
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <div>
+        <p>© 2025 Sulthan Feast. Hak Cipta Dilindungi.</p>
       </div>
     </div>
   </Footer>
