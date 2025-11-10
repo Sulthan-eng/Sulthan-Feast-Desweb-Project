@@ -116,7 +116,7 @@ export const mainCourseMenu = [
     {
         groupId: 'kabsah',
         groupName: 'D. Nasi Kabsah',
-        groupDesc: 'Nasi rempah khas Arab Saudi dengan rasa gurih dan sedikit asam, disajikan dengan daging panggang.'
+        groupDesc: 'Nasi rempah khas Arab Saudi dengan rasa gurih dan sedikit asam, disajikan dengan daging panggang.',
         items: [
             {
                 id: 'mc10',
