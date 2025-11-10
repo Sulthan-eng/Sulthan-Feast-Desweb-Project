@@ -3,7 +3,7 @@ export const appertizerMenu = [
         id: 'appertizer1',
         name: 'Baba Gnaoush',
         description: 'Dip terong panggang lembut dengan tahini, bawang putih, lemon, dan minyak zaitun.',
-        image: '@/src/assets/images/menu/appertizer-dessert/baba-gnaoush.jpg',
+        image: '@/src/assets/images/menu/appertizer-dessert/baba-ghanoush.jpg',
         price: 'RP 40.000',
     },
     {
