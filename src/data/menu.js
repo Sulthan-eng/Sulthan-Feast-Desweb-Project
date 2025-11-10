@@ -34,6 +34,13 @@ export const appertizerMenu = [
         image: '@/src/assets/images/menu/appertizer-dessert/falafel.jpeg',
         price: 'RP 35.000',
     },
+    {
+        id: 'appertizer6',
+        name: 'Kebab',
+        description: 'Daging sapi berbumbu khas Timur Tengah, disajikan dengan roti tortilla, sayuran segar, dan saus yoghurt.',
+        image: '@/src/assets/images/menu/appertizer-dessert/kebab.jpg',
+        price: 'RP 37.000',
+    },
 ]
 
 
