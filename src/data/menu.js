@@ -338,13 +338,13 @@ export const dessertMenu = [
         name: 'Kunafa',
         description: 'Dessert khas Timur Tengah dari adonan kadaif renyah berlapis keju lembut, disiram sirup gula mawar hangat.',
         image: '@/src/assets/images/menu/appertizer-dessert/kunafa.png',
-        price: 'RP 42.000',
+        price: 'RP 40.000',
     },
     {
         id: 'dessert5',
         name: 'Mahalabia',
         description: 'Puding susu khas Arab yang lembut dan wangi air mawar, disajikan dingin dengan taburan kacang pistachio.',
         image: '@/src/assets/images/menu/appertizer-dessert/mahalabia.jpg',
-        price: 'RP 33.000',
+        price: 'RP 32.000',
     },
 ]
