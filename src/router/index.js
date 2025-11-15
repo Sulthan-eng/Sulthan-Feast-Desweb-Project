@@ -24,7 +24,7 @@ const routes = [
     },
     {
         path: "/souvenirs",
-        name: "Sourvenirs&Gifts",
+        name: "Sourvenirs & Gifts",
         component: SouvenirsGiftsPage,
     },
     {
