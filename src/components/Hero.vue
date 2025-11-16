@@ -1,4 +1,4 @@
-<script setup lang>
+<script setup>
 import heroImg from "@/assets/images/heroSection/hero_foto.jpg";
 </script>
 
