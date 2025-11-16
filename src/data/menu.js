@@ -10,7 +10,7 @@ export const appertizerMenu = [
         id: 'appertizer2',
         name: 'Samosa',
         description: 'Kulit tipis goreng berisi daging berbumbu dan sayuran, disajikan hangat dengan saus yoghurt mint.',
-        image: '@/src//assets/images/menu/appertizer-dessert/samosa.jpeg',
+        image: '@/src/assets/images/menu/appertizer-dessert/samosa.jpeg',
         price: 'RP 30.000',
     },
     {
