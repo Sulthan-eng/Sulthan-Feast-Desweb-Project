@@ -14,7 +14,7 @@ const isMenuOpen = ref(false);
 
 <!--    area hamburger-->
       <button @click="isMenuOpen = !isMenuOpen" type="button" 
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" :aria-expanded="isMenuOpen">
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body-base lg:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" :aria-expanded="isMenuOpen">
         <span class="sr-only">Open main menu</span>
 
         <!-- ikon x -->
@@ -29,25 +29,25 @@ const isMenuOpen = ref(false);
       </button>
 
 
-      <div :class="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="w-full md:block md:w-auto">
-        <ul class="font-medium flex flex-col md:p-0 bg-black md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+      <div :class="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="w-full lg:block lg:w-auto">
+        <ul class="font-medium flex flex-col lg:p-0 bg-black lg:flex-row lg:space-x-12 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-neutral-primary">
           <li>
-            <RouterLink to="/" active-class="text-yellow-400" class="block py-2 px-3 text-white md:bg-transparent md:p-0 hover:text-yellow-300">Home</RouterLink>
+            <RouterLink to="/" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Home</RouterLink>
           </li>
           <li>
-            <RouterLink to="/menu" active-class="text-yellow-400" class="block py-2 px-3 text-white md:bg-transparent md:p-0 hover:text-yellow-300">Menu</RouterLink>
+            <RouterLink to="/menu" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Menu</RouterLink>
           </li>
           <li>
-            <RouterLink to="/room" active-class="text-yellow-400" class="block py-2 px-3 text-white md:bg-transparent md:p-0 hover:text-yellow-300">Room</RouterLink>
+            <RouterLink to="/room" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Room</RouterLink>
           </li>
           <li>
-            <RouterLink to="/souvenirs"active-class="text-yellow-400" class="block py-2 px-3 text-white md:bg-transparent md:p-0 hover:text-yellow-300">Souvenirs & Gifts</RouterLink>
+            <RouterLink to="/souvenirs"active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Souvenirs & Gifts</RouterLink>
           </li>
           <li>
-            <RouterLink to="/about" active-class="text-yellow-400" class="block py-2 px-3 text-white md:bg-transparent md:p-0 hover:text-yellow-300">About</RouterLink>
+            <RouterLink to="/about" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">About</RouterLink>
           </li>
           <li>
-            <RouterLink to="/reservation" active-class="text-yellow-400" class="block py-2 px-3 text-white md:bg-transparent md:p-0 hover:text-yellow-300">Reservation</RouterLink>
+            <RouterLink to="/reservation" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Reservation</RouterLink>
           </li>
         </ul>
       </div>
