@@ -3,7 +3,7 @@ export const appertizerMenu = [
         id: 'appertizer1',
         name: 'Baba Gnaoush',
         description: 'Dip terong panggang lembut dengan tahini, bawang putih, lemon, dan minyak zaitun.',
-        image: '@/src/assets/images/menu/appertizer-dessert/baba-ghanoush.jpg',
+        image: '@/src/assets/images/menu/appertizer-dessert/baba_ghanoush.jpg',
         price: 40.000,
     },
     {
@@ -54,19 +54,19 @@ export const mainCourseMenu = [
                 id: 'mc1',
                 name: 'Nasi Briyani Daging Domba',
                 price: 70.000,
-                image: '@/src/assets/images/menu/maincourse-sidedish/briyani domba.png'
+                image: '@/src/assets/images/menu/maincourse-sidedish/briyani_domba.png'
             },
             {
                 id: 'mc2',
                 name: 'Nasi Briyani Daging Ayam',
                 price: 55.000,
-                image: '@/src/assets/images/menu/maincourse-sidedish/briyani ayam.jpg'
+                image: '@/src/assets/images/menu/maincourse-sidedish/briyani_ayam.jpg'
             },
             {
                 id: 'mc3',
                 name: 'Nasi Briyani Daging Sapi',
                 price: 70.000,
-                image: '@/src/assets/images/menu/maincourse-sidedish/briyani sapi.png'
+                image: '@/src/assets/images/menu/maincourse-sidedish/briyani_sapi.png'
             },
         ]
     },
@@ -79,19 +79,19 @@ export const mainCourseMenu = [
                 id: 'mc4',
                 name: 'Nasi Kebuli Daging Domba',
                 price: 70.000,
-                image: '@/src/assets/images/menu/maincourse-sidedish/kebuli domba.png'
+                image: '@/src/assets/images/menu/maincourse-sidedish/kebuli_domba.png'
             },
             {
                 id: 'mc5',
                 name: 'Nasi Kebuli Daging Ayam',
                 price: 55.000,
-                image: '@/src/assets/images/menu/maincourse-sidedish/kebuli ayam.jpg'
+                image: '@/src/assets/images/menu/maincourse-sidedish/kebuli_ayam.jpg'
             },
             {
                 id: 'mc6',
                 name: 'Nasi Kebuli Daging Sapi',
                 price: 70.000,
-                image: '@/src/assets/images/menu/maincourse-sidedish/kebuli sapi.png'
+                image: '@/src/assets/images/menu/maincourse-sidedish/kebuli_sapi.png'
             },
         ]
     },
@@ -160,7 +160,7 @@ export const sideDishMenu = [
         id: 'sd2',
         name: 'French Fries',
         description: 'Kentang goreng renyah disajikan hangat dengan saus tomat dan mayonnaise.',
-        image: '@/src/assets/images/menu/maincourse-sidedish/kentang goreng.jpg',
+        image: '@/src/assets/images/menu/maincourse-sidedish/kentang_goreng.jpg',
         price: 17.000,
     },
     {
@@ -196,7 +196,7 @@ export const beverageMenu = [
                 id: 'beverage2',
                 name: 'Karak Tea',
                 description: 'Teh susu khas Teluk Arab dengan kapulaga dan rasa manis aromatik.',
-                image: '@/src/assets/images/menu/beverage/karak tea.jpeg',
+                image: '@/src/assets/images/menu/beverage/karak_tea.jpeg',
                 price: 15.000,
             },
         ]
@@ -208,31 +208,31 @@ export const beverageMenu = [
             {
                 id: 'beverage3',
                 name: 'Americano',
-                image: '@/src/assets/images/menu/beverage/kopi americano.jpeg',
+                image: '@/src/assets/images/menu/beverage/kopi_americano.jpeg',
                 price: 24.000,
             },
             {
                 id: 'beverage4',
                 name: 'Espresso',
-                image: '@/src/assets/images/menu/beverage/kopi espresso.jpeg',
+                image: '@/src/assets/images/menu/beverage/kopi_espresso.jpeg',
                 price: 20.000,
             },
             {
                 id: 'beverage5',
                 name: 'Latte',
-                image: '@/src/assets/images/menu/beverage/kopi latte.jpeg',
+                image: '@/src/assets/images/menu/beverage/kopi_latte.jpeg',
                 price: 28.000,
             },
             {
                 id: 'beverage6',
                 name: 'Cappuccino',
-                image: '@/src/assets/images/menu/beverage/kopi Cappuccino.jpg',
+                image: '@/src/assets/images/menu/beverage/kopi_cappuccino.jpg',
                 price: 28.000,
             },
             {
                 id: 'beverage7',
                 name: 'Moccacino',
-                image: '@/src/assets/images/menu/beverage/kopi moccacino.jpeg',
+                image: '@/src/assets/images/menu/beverage/kopi_moccacino.jpeg',
                 price: 28.000,
             }
         ]
@@ -244,37 +244,37 @@ export const beverageMenu = [
             {
                 id: 'beverage8',
                 name: 'Jus Buah Naga',
-                image: '@/src/assets/images/menu/beverage/jus buah naga.jpg',
+                image: '@/src/assets/images/menu/beverage/jus_buah_naga.jpg',
                 price: 20.000,
             },
             {
                 id: 'beverage9',
                 name: 'Jus Jeruk',
-                image: '@/src/assets/images/menu/beverage/jus jeruk.jpg',
+                image: '@/src/assets/images/menu/beverage/jus_jeruk.jpg',
                 price: 18.000,
             },
             {
                 id: 'beverage10',
                 name: 'Jus Alpukat',
-                image: '@/src/assets/images/menu/beverage/Jus-Alpukat.jpg',
+                image: '@/src/assets/images/menu/beverage/jus_alpukat.jpg',
                 price: 23.000,
             },
             {
                 id: 'beverage11',
                 name: 'Jus Kurma',
-                image: '@/src/assets/images/menu/beverage/jus kurma.jpg',
+                image: '@/src/assets/images/menu/beverage/jus_kurma.jpg',
                 price: 25.000,
             },
             {
                 id: 'beverage12',
                 name: 'Jus Mangga',
-                image: '@/src/assets/images/menu/beverage/jus mangga.jpg',
+                image: '@/src/assets/images/menu/beverage/jus_mangga.jpg',
                 price: 21.000,
             },
             {
                 id: 'beverage13',
                 name: 'Jus Pepaya',
-                image: '@/src/assets/images/menu/beverage/jus pepaya.jpg',
+                image: '@/src/assets/images/menu/beverage/jus_pepaya.jpg',
                 price: 20.000,
             },
         ]
@@ -292,7 +292,7 @@ export const beverageMenu = [
             {
                 id: 'beverage15',
                 name: 'Teh Tarik',
-                image: '@/src/assets/images/menu/beverage/teh tarik.jpeg',
+                image: '@/src/assets/images/menu/beverage/teh_tarik.jpeg',
                 price: 14.000,
             },
             {
@@ -304,7 +304,7 @@ export const beverageMenu = [
             {
                 id: 'beverage17',
                 name: 'Air Putih Es/Hangat',
-                image: '@/src/assets/images/menu/beverage/air putih.jpeg',
+                image: '@/src/assets/images/menu/beverage/air_putih.jpeg',
                 price: 5.000,
             },
             {
@@ -330,14 +330,14 @@ export const dessertMenu = [
         id: 'dessert2',
         name: 'Es Pisang Ijo',
         description: 'Hidangan penutup khas Makassar, pisang dibalut adonan hijau lembut dengan sirup merah dan santan dingin.',
-        image: '@/src/assets/images/menu/appertizer-dessert/Es-pisang-ijo.jpg',
+        image: '@/src/assets/images/menu/appertizer-dessert/Es_pisang_ijo.jpg',
         price: 22.000,
     },
     {
         id: 'dessert3',
         name: 'Kolak Kurma',
         description: 'Kreasi Nusantara dengan sentuhan Timur Tengah — kurma dan pisang dimasak dalam kuah santan manis beraroma pandan.',
-        image: '@/src/assets/images/menu/appertizer-dessert/kolak-kurma.jpg',
+        image: '@/src/assets/images/menu/appertizer-dessert/kolak_kurma.jpg',
         price: 25.000,
     },
     {
@@ -355,3 +355,26 @@ export const dessertMenu = [
         price: 32.000,
     },
 ]
+
+export const bestSeller = [
+  {
+    id: 'best1',
+    name: 'Nasi Briyani Domba',
+    image: '@/assets/images/menu/maincourse-sidedish/briyani_domba.png',
+  },
+  {
+    id: 'best2',
+    name: 'Nasi Kebuli Ayam',
+    image: '@/assets/images/menu/maincourse-sidedish/kebuli_ayam.jpg',
+  },
+  {
+    id: 'best3',
+    name: 'Kebab',
+    image: '@/assets/images/menu/appertizer-dessert/kebab.jpg',
+  },
+  {
+    id: 'best4',
+    name: 'Karak Tea',
+    image: '@/assets/images/menu/beverage/',
+  }
+];
