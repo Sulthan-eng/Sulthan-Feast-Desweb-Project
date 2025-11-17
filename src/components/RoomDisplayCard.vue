@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <div
-    class="flex flex-col md:flex-row items-center md:items-center px-6 md:px-24"
+    class="flex flex-col md:flex-row items-center md:items-center px-8 md:px-24"
     :class="index % 2 === 1 ? 'md:flex-row-reverse' : ''"
   >
     
