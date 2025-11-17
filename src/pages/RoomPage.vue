@@ -1,16 +1,13 @@
-<script setup lang="ts">
-
+<script setup>
 import Navbar from "@/components/Navbar.vue";
+import RoomDisplayList from "@/components/RoomDisplayList.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
   <Navbar/>
-
-  <div class="p-4 text-center text-xl font-bold bg-green-100">
-    <h1>Our Room</h1>
-    <p>Selain tempat duduk reguler, Sulthan Feast juga memiliki ruangan bernuansa Timur Tengah yang memanjakan mata
-      sehingga anda bisa bercengkrama dengan keluarga, sahabat, serta rekan kerja anda.</p>
-  </div>
+  <RoomDisplayList/>
+  <Footer/>
 </template>
 
 <style scoped>
