@@ -32,22 +32,22 @@ const isMenuOpen = ref(false);
       <div :class="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="w-full lg:block lg:w-auto">
         <ul class="font-medium flex flex-col lg:p-0 bg-black lg:flex-row lg:space-x-12 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-neutral-primary">
           <li>
-            <RouterLink to="/" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Home</RouterLink>
+            <RouterLink to="/" active-class="text-yellow-500" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Home</RouterLink>
           </li>
           <li>
-            <RouterLink to="/menu" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Menu</RouterLink>
+            <RouterLink to="/menu" active-class="text-yellow-500" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Menu</RouterLink>
           </li>
           <li>
-            <RouterLink to="/room" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Room</RouterLink>
+            <RouterLink to="/room" active-class="text-yellow-500" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Room</RouterLink>
           </li>
           <li>
-            <RouterLink to="/souvenirs"active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Souvenirs & Gifts</RouterLink>
+            <RouterLink to="/souvenirs"active-class="text-yellow-500" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Souvenirs & Gifts</RouterLink>
           </li>
           <li>
-            <RouterLink to="/about" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">About</RouterLink>
+            <RouterLink to="/about" active-class="text-yellow-500" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">About</RouterLink>
           </li>
           <li>
-            <RouterLink to="/reservation" active-class="text-yellow-400" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Reservation</RouterLink>
+            <RouterLink to="/reservation" active-class="text-yellow-500" class="block py-2 px-3 text-white lg:bg-transparent lg:p-0 hover:text-yellow-300">Reservation</RouterLink>
           </li>
         </ul>
       </div>
