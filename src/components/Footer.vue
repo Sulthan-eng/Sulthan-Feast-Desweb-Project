@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 
 </script>
 
@@ -19,6 +19,22 @@
         <h3 class="text-xl font-semibold uppercase mb-2">Kontak</h3>
         <p class="text-base">Whatsapp : 0853-9141-9495</p>
         <p class="text-base">Telepon : 0542-7341-0908</p>
+      </div>
+
+      <div class="flex flex-col items-center lg:items-start space-y-2">
+        <h3 class="text-xl font-semibold uppercase mb-2">Media Sosial</h3>
+        <div class="flex flex-col items-center lg:items-start space-y-2 mt-2">
+          <a href="https://www.instagram.com/farizanfawwaz" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 text-gray-300 hover:text-yellow-500 transition-colors duration-200">
+            <font-awesome-icon :icon="['fab', 'instagram']" class="text-xl" />
+            <span class="text-base">Instagram</span>
+          </a>
+
+          <a href="https://www.facebook.com/share/1BuNQJ2JTB/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 text-gray-300 hover:text-yellow-500 transition-colors duration-200">
+            <font-awesome-icon :icon="['fab', 'facebook']" class="text-xl" />
+            <span class="text-base">Facebook</span>
+          </a>
+
+        </div>
       </div>
     </div>
     <div class="py-6 text-sm text-center text-gray-400">
