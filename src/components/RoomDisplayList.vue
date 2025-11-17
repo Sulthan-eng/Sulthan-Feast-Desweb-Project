@@ -10,7 +10,7 @@ import RoomDisplayCard from "@/components/RoomDisplayCard.vue";
       OUR ROOM
     </h1>
 
-    <p class="max-w-3xl mx-auto mt-5 text-gray-300 text-center leading-relaxed px-6">
+    <p class="max-w-4xl font-medium mx-auto mt-5 text-gray-300 text-center leading-relaxed px-6">
       Selain tempat duduk reguler, Sulthan Feast juga memiliki ruangan bernuansa
       Timur Tengah yang memanjakan mata sehingga anda bisa bercengkrama
       dengan keluarga, sahabat, serta rekan kerja anda.
