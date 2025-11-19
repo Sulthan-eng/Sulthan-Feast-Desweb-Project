@@ -14,7 +14,7 @@ export const room = [
     {
         id: 'room3',
         name: 'Meeting Room',
-        description: 'Ruangan khusus untuk rapat bersama dengan bos atau rekan kerja anda.',
+        description: 'Ruangan khusus untuk rapat bersama dengan atasan atau rekan kerja anda.',
         image: new URL('@/assets/images/room/meeting_room.png', import.meta.url).href
     },
 ]
