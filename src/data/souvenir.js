@@ -13,7 +13,7 @@ export const snacks = [
     {
         id: 'snack3',
         name: 'Kacang Arab',
-        image: new URL('@/src/assets/images/souvenirs&gifts/kacang arab.jpeg', import.meta.url).href
+        image: new URL('@/src/assets/images/souvenirs&gifts/kacang_arab.jpeg', import.meta.url).href
     }
 ];
 
