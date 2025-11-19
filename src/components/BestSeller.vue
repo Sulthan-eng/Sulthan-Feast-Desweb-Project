@@ -19,22 +19,22 @@ import { RouterLink } from 'vue-router';
         
         <div class="flex flex-col items-center text-center">
           <img src="@/assets/images/menu/maincourse-sidedish/briyani_domba.png" alt="Nasi Briyani Domba" class="w-full max-w-md rounded-lg shadow-lg aspect-square object-cover">
-          <h3 class="text-xl font-semibold mt-5">Nasi Briyani Domba</h3>
+          <h3 class="text-xl font-normal mt-5">Nasi Briyani Domba</h3>
         </div>
 
         <div class="flex flex-col items-center text-center">
           <img src="@/assets/images/menu/maincourse-sidedish/kebuli_ayam.jpg" alt="Nasi Kebuli Ayam" class="w-full max-w-md rounded-lg shadow-lg aspect-square object-cover">
-          <h3 class="text-xl font-semibold mt-5">Nasi Kebuli Ayam</h3>
+          <h3 class="text-xl font-normal mt-5">Nasi Kebuli Ayam</h3>
         </div>
 
         <div class="flex flex-col items-center text-center">
           <img src="@/assets/images/menu/appertizer-dessert/kebab.jpg" alt="Kebab" class="w-full max-w-md rounded-lg shadow-lg aspect-square object-cover">
-          <h3 class="text-xl font-semibold mt-5">Kebab</h3>
+          <h3 class="text-xl font-normal mt-5">Kebab</h3>
         </div>
 
         <div class="flex flex-col items-center text-center">
           <img src="@/assets/images/menu/beverage/karak_tea.jpeg" alt="Karak Tea" class="w-full max-w-md rounded-lg shadow-lg aspect-square object-cover">
-          <h3 class="text-xl font-semibold mt-5">Karak Tea</h3>
+          <h3 class="text-xl font-normal mt-5">Karak Tea</h3>
         </div>
       </div>
 
