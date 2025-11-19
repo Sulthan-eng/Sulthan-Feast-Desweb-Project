@@ -4,7 +4,7 @@ import RoomDisplayCard from "@/components/RoomDisplayCard.vue";
 </script>
 
 <template>
-  <section class="bg-zinc-900 text-white pt-32 pb-20">
+  <section class="bg-zinc-900 text-white pt-15 pb-20">
 
     <h1 class="font-['Cinzel_Decorative'] text-center text-3xl md:text-5xl font-semibold text-yellow-500">
       OUR ROOM
