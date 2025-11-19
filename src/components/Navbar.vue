@@ -6,8 +6,8 @@ const isMenuOpen = ref(false);
 </script>
 
 <template>
-  <nav class="bg-black text-white fixed w-full z-20 top-0 start-0 border-b border-default">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
+  <nav class="bg-black text-white sticky w-full z-20 top-0 start-0 border-b border-default">
+    <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-5">
       <RouterLink to="/">
         <img src="/Full_Logo_Sulthan_Feast.svg" class="h-18" alt="Sulthan Feast Logo" />
       </RouterLink>
