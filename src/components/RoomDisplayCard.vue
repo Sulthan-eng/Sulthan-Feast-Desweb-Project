@@ -14,7 +14,7 @@ defineProps({
         {{ room.name }}
       </h2>
 
-      <p class="text-gray-300 mt-3 leading-relaxed">
+      <p class="text-gray-300 mt-3 font-medium leading-relaxed">
         {{ room.description }}
       </p>
     </div>
