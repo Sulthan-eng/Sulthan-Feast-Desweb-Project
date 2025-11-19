@@ -19,9 +19,9 @@ import RoomDisplayCard from "@/components/RoomDisplayCard.vue";
     <div class="mt-20 space-y-24">
       <RoomDisplayCard
         v-for="(r, index) in room"
-        :key="r.id"
-        :room="r"
-        :index="index"
+          :key="r.id"
+          :room="r"
+          :index="index"
       />
     </div>
 
