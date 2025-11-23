@@ -13,7 +13,7 @@ import SnacksDisplayCard from './SnacksDisplayCard.vue';
                 v-for="s in snacks"
                 :key="s.id"
                 :snacks="s"
-        />
+            />
         </div>
     </section>
 </template>
