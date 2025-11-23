@@ -9,8 +9,8 @@ defineProps({
     <div class="flex flex-col items-center bg-white w-80 h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
         <img :src="snacks.image" :alt="snacks.name" class="h-56 w-full object-cover"/>
         
-        <div class="p-4 w-full text-center">
-            <h3 class="mt-4 text-xl font-semibold text-black">
+        <div class="p-3 w-full text-center">
+            <h3 class="mt-3 text-xl font-semibold text-black">
                 {{ snacks.name }}
             </h3>
 
