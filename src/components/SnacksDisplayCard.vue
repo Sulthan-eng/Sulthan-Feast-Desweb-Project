@@ -6,11 +6,17 @@ defineProps({
 </script>
 
 <template>
-    <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-mg">
-        <img :src="snacks.image" :alt="snacks.name" class="w-40 h-40 object-cover rounded-md"/>
+    <div class="flex flex-col items-center bg-white w-80 h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+        <img :src="snacks.image" :alt="snacks.name" class="h-56 w-full object-cover"/>
+        
+        <div class="p-4 w-full text-center">
+            <h3 class="mt-4 text-xl font-semibold text-black">
+                {{ snacks.name }}
+            </h3>
 
-        <h3 class="mt-4 text-xl font-semibold text-black">
-            {{ snacks.name }}
-        </h3>
+            <p class="text-lg font-medium text-gray-800">
+                {{ snacks.price }}
+            </p>
+        </div>
     </div>
 </template>
