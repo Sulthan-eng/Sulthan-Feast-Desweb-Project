@@ -8,7 +8,7 @@ export const snacks = [
     {
         id: 'snack2',
         name: 'Kismis',
-        image: new URL('@/assets/images/souvenirs-gifts/kismis.jpeg', import.meta.url).href
+        image: new URL('@/assets/images/souvenirs-gifts/kismis.jpg', import.meta.url).href
     },
     {
         id: 'snack3',
