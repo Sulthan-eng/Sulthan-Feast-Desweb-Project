@@ -1,16 +1,11 @@
-<script setup lang="ts">
-
+<script setup>
 import Navbar from "@/components/Navbar.vue";
+import Reservation from "@/components/Reservation.vue";
 </script>
 
 <template>
   <Navbar/>
-
-  <div class="p-4 text-center text-xl font-bold bg-green-100">
-    <h1>Reservations</h1>
-    <p>Rayakan hari spesial anda di Sulthan Fest dengan masakan, interior, serta alunan musik khas Timur
-      Tengah yang akan memberikan anda kenangan yang tak terlupakan.</p>
-  </div>
+  <Reservation/>
 </template>
 
 <style scoped>
