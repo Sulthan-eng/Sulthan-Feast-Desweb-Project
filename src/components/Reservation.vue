@@ -36,7 +36,7 @@ const availableTimes = [
       terlupakan.
     </p>
 
-    <div v-if="isSubmitted" class="mt-10 pt-4 bg-green-800/50 border border-green-600 text-green-100 rounded-md text-center max-w-2xl mx-auto ">
+    <div v-if="isSubmitted" class="mt-10 p-4 bg-green-800/50 border border-green-600 text-green-100 rounded-md text-center max-w-2xl mx-auto ">
       <p class="text-center font-bold text-lg">Reservasi Anda Berhasil Dikirim</p>
       <p>Terimakasih, kami akan segera menghubungi anda melalui Whatsapp/email untuk konfirmasi reservasi anda</p>
     </div>
@@ -188,18 +188,6 @@ const availableTimes = [
             </div>
             
             <div class="col-span-full">
-              <label for="notes" class="block text-sm/6 font-medium text-white">Catatan Tambahan (Opsional)</label>
-              <div class="mt-2">
-                <textarea
-                  id="notes"
-                  name="notes"
-                  rows="3"
-                  v-model="formData.notes"
-                  class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
-                  placeholder="Contoh: Request kursi bayi, alergi makanan, dll."
-                ></textarea>
-              </div>
-            </div><div class="col-span-full">
               <label for="notes" class="block text-sm/6 font-medium text-white">Catatan Tambahan (Opsional)</label>
               <div class="mt-2">
                 <textarea
