@@ -8,15 +8,34 @@ const formData = reactive({
   room: '',
   date: '',
   time: '',
-  guests: '',
+  guests: '1',
   notes:''
 });
 
 const isSubmitted = ref(false);
 
 const handleSubmit = () => {
-  console.log('Formulir dikirim dengan data: ', formData); //debug
-  isSubmitted.value = true
+  const isConfirmed = confirm("Apakah Anda yakin ingin mengirim pesanan ini?");
+
+  if (isConfirmed) {
+    console.log('Formulir dikirim dengan data: ', formData); //debug
+    isSubmitted.value = true;
+  }
+};
+
+const handleReset = () => {
+  const isConfirmed = confirm("Apakah Anda yakin ingin menghapus semua progress Anda?");
+
+  if (isConfirmed) {
+    formData.name = '';
+    formData.number = '';
+    formData.email = '';
+    formData.room = '';
+    formData.date = '';
+    formData.time = '';
+    formData.guests = 1;
+    formData.notes = '';
+  }
 };
 
 const availableTimes = [
@@ -183,7 +202,6 @@ const availableTimes = [
                   v-model="formData.guests"
                   required
                   class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
-                  placeholder="1"
                 />
               </div>
             </div>
@@ -197,7 +215,7 @@ const availableTimes = [
                   rows="3"
                   v-model="formData.notes"
                   class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
-                  placeholder="Contoh: Request kursi bayi, alergi makanan, dll."
+                  placeholder="Contoh: Request kursi bayi."
                 ></textarea>
               </div>
             </div>
@@ -206,7 +224,7 @@ const availableTimes = [
       </div>
 
       <div class="mt-6 flex items-center justify-end gap-x-6">
-        <button type="reset" class="text-sm/6 font-semibold text-gray-300 hover:text-white transition-colors">
+        <button type="button" @click="handleReset" class="text-sm/6 font-semibold text-gray-300 hover:text-white transition-colors">
           Reset
         </button>
         <button
@@ -219,3 +237,4 @@ const availableTimes = [
     </form>
   </div>
 </template>
+  isSubmitted.value = true
