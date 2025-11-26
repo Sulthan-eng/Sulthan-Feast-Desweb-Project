@@ -237,4 +237,3 @@ const availableTimes = [
     </form>
   </div>
 </template>
-  isSubmitted.value = true
