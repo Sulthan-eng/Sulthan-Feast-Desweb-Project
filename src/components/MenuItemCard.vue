@@ -1,35 +1,15 @@
-<script setup lang="ts">
-// ini kepake di Best seller dan menu page
-interface MenuItem {
-  id: string;
-  name: string;
-  description?: string; // opsional
-  image: string;
-  price?: number; // Opsional
-  category?: string; // Opsional
-}
-
-defineProps<{
-  item: MenuItem
-}>()
-
-
-const formatCurrency = (value?: number) => {
-  if (value === undefined || value === null) return '';
-  return new Intl.NumberFormat('id-ID', {
-    style: 'currency',
-    currency: 'RP',
-    minimumFractionDigits: 0
-  }).format(value);
-};
+<script setup>
+const props = defineProps({
+    items: Object
+})
 </script>
 
 <template>
-    <div>
+    <div class="bg-zinc-900 rounded-lg p-4 shadow-md">
     <img :src="item.image" :alt="item.name" />
-    <h3>{{ item.name }}</h3>
-    <p v-if="item.description">{{ item.description }}</p>
-    <p v-if="item.price">{{ formatCurrency(item.price) }}</p>
+    <h3 class="text-lg text-gray-200 font-semibold">{{ item.name }}</h3>
+    <p v-if="item.description" class="text-gray-200 text-sm mt-1">{{ item.description }}</p>
+    <p v-if="item.price" class="text-gray-200 text-sm mt-1">{{ item.price }}</p>
     </div>
 </template>
 
