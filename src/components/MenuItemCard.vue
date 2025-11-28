@@ -9,7 +9,7 @@ const props = defineProps({
     <img :src="item.image" :alt="item.name" />
     <h3 class="text-lg text-gray-200 font-semibold">{{ item.name }}</h3>
     <p v-if="item.description" class="text-gray-200 text-sm mt-1">{{ item.description }}</p>
-    <p v-if="item.price" class="text-gray-200 text-sm mt-1">{{ item.price }}</p>
+    <p v-if="item.price" class="text-gray-200 text-sm mt-2">{{ item.price }}</p>
     </div>
 </template>
 
