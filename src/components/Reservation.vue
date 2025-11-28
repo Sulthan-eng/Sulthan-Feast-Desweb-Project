@@ -15,7 +15,7 @@ const formData = reactive({
 const isSubmitted = ref(false);
 
 const handleSubmit = () => {
-  const isConfirmed = confirm("Apakah Anda yakin ingin mengirim pesanan ini?");
+  const isConfirmed = confirm("Apakah Anda yakin ingin mengirim reservasi?");
 
   if (isConfirmed) {
     console.log('Formulir dikirim dengan data: ', formData); //debug
@@ -49,7 +49,7 @@ const availableTimes = [
     <h1 class="font-['Cinzel_Decorative'] text-center text-3xl md:text-5xl font-semibold text-yellow-500 space-y-4">
       Reservations
     </h1>
-    <p class="text-center text-gray-300 font-medium mt-5 leading-relaxed px-6">
+    <p class="text-center text-gray-300 font-medium mt-5 leading-relaxed px-6 max-w-3xl mx-auto">
       Rayakan hari spesial anda di Sulthan Fest dengan masakan, interior, serta
       alunan musik khas Timur Tengah yang akan memberikan anda kenangan yang tak
       terlupakan.
@@ -60,23 +60,24 @@ const availableTimes = [
       <p>Terimakasih, kami akan segera menghubungi anda melalui Whatsapp/email untuk konfirmasi reservasi anda</p>
     </div>
 
-    <form v-else @submit.prevent="handleSubmit" class="pt-16 max-w-2xl mx-auto">
+    <form 
+      v-else 
+      @submit.prevent="handleSubmit" 
+      class="mt-12 max-w-4xl mx-auto bg-zinc-800/80 p-6 md:p-10 rounded-2xl border border-white/5 shadow-2xl"
+    >
       <div class="space-y-12">
-        <div class="border-b border-white/10 pb-12">
-          <h2 class="text-base/7 font-semibold text-white">
+        <div class="pb-4">
+          <h2 class="text-lg font-semibold text-white">
             Informasi Pribadi
           </h2>
-          <p class="mt-1 text-sm/6 text-gray-400">
+          <p class="mt-1 text-sm text-gray-400">
             Silahkan isi informasi yang diminta di bawah.
           </p>
 
-          <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div class="mt-8 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            
             <div class="sm:col-span-3">
-              <label
-                for="name"
-                class="block text-sm/6 font-medium text-white"
-                >Nama Lengkap*</label
-              >
+              <label for="name" class="block text-sm font-medium text-white">Nama Lengkap*</label>
               <div class="mt-2">
                 <input
                   id="name"
@@ -85,17 +86,14 @@ const availableTimes = [
                   autocomplete="given-name"
                   v-model="formData.name"
                   required
-                  class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
+                  placeholder="Masukkan nama lengkap"
+                  class="block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500  focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                 />
               </div>
             </div>
 
             <div class="sm:col-span-3">
-              <label
-                for="number"
-                class="block text-sm/6 font-medium text-white"
-                >Nomor Whatsapp*</label
-              >
+              <label for="number" class="block text-sm font-medium text-white">Nomor Whatsapp*</label>
               <div class="mt-2">
                 <input
                   id="number"
@@ -104,15 +102,14 @@ const availableTimes = [
                   autocomplete="tel"
                   v-model="formData.number"
                   required
-                  class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
+                  placeholder="08xxxxxxxxxx"
+                  class="block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                 />
               </div>
             </div>
 
-            <div class="sm:col-span-4">
-              <label for="email" class="block text-sm/6 font-medium text-white"
-                >Alamat Email*</label
-              >
+            <div class="sm:col-span-6">
+              <label for="email" class="block text-sm font-medium text-white">Alamat Email*</label>
               <div class="mt-2">
                 <input
                   id="email"
@@ -121,24 +118,21 @@ const availableTimes = [
                   autocomplete="email"
                   v-model="formData.email"
                   required
-                  class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
+                  placeholder="emailanda@gmail.com"
+                  class="block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                 />
               </div>
             </div>
 
             <div class="sm:col-span-3">
-              <label
-                for="room"
-                class="block text-sm/6 font-medium text-white"
-                >Ruangan*</label
-              >
+              <label for="room" class="block text-sm font-medium text-white">Ruangan*</label>
               <div class="mt-2 grid grid-cols-1">
                 <select
                   id="room"
                   name="room"
                   v-model="formData.room"
                   required
-                  class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white/5 py-1.5 pr-8 pl-3 text-base text-white outline-1 -outline-offset-1 outline-white/10 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
+                  class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-zinc-950/50 py-2 pr-8 pl-3 text-base text-white outline-1 -outline-offset-1 outline-white/10 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                 >
                   <option disabled value="">Pilih Ruangan</option>
                   <option>Reguler Area</option>
@@ -153,11 +147,7 @@ const availableTimes = [
             </div>
 
             <div class="sm:col-span-3">
-              <label
-                for="date"
-                class="block text-sm/6 font-medium text-white"
-                >Tanggal*</label
-              >
+              <label for="date" class="block text-sm font-medium text-white">Tanggal*</label>
               <div class="mt-2">
                 <input
                   id="date"
@@ -165,22 +155,20 @@ const availableTimes = [
                   name="date"
                   v-model="formData.date"
                   required
-                  class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6 [color-scheme:dark]"
+                  class="block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 5 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm [color-scheme:dark]"
                 />
               </div>
             </div>
 
             <div class="sm:col-span-3">
-              <label for="time" class="block text-sm/6 font-medium text-white"
-                >Jam Reservasi*</label
-              >
+              <label for="time" class="block text-sm font-medium text-white">Jam Reservasi*</label>
               <div class="mt-2 grid grid-cols-1">
                 <select
                   id="time"
                   name="time"
                   v-model="formData.time"
                   required
-                  class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white/5 py-1.5 pr-8 pl-3 text-base text-white outline-1 -outline-offset-1 outline-white/10 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
+                  class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-zinc-950/50 py-2 pr-8 pl-3 text-base text-white outline-1 -outline-offset-1 outline-white/10 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                 >
                   <option disabled value="">Pilih Jam</option>
                   <option v-for="time in availableTimes" :key="time" :value="time">{{ time }}</option>
@@ -191,8 +179,8 @@ const availableTimes = [
               </div>
             </div>
 
-            <div class="sm:col-span-2">
-              <label for="guests" class="block text-sm/6 font-medium text-white">Jumlah Orang *</label>
+            <div class="sm:col-span-3">
+              <label for="guests" class="block text-sm font-medium text-white">Jumlah Orang*</label>
               <div class="mt-2">
                 <input
                   id="guests"
@@ -201,20 +189,20 @@ const availableTimes = [
                   min="1"
                   v-model="formData.guests"
                   required
-                  class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
+                  class="block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                 />
               </div>
             </div>
             
             <div class="col-span-full">
-              <label for="notes" class="block text-sm/6 font-medium text-white">Catatan Tambahan (Opsional)</label>
+              <label for="notes" class="block text-sm font-medium text-white">Catatan Tambahan (Opsional)</label>
               <div class="mt-2">
                 <textarea
                   id="notes"
                   name="notes"
                   rows="3"
                   v-model="formData.notes"
-                  class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm/6"
+                  class="block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 5 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                   placeholder="Contoh: Request kursi bayi."
                 ></textarea>
               </div>
@@ -223,13 +211,13 @@ const availableTimes = [
         </div>
       </div>
 
-      <div class="mt-6 flex items-center justify-end gap-x-6">
-        <button type="button" @click="handleReset" class="text-sm/6 font-semibold text-gray-300 hover:text-white transition-colors">
+      <div class="mt-8 flex items-center justify-end gap-x-6 border-t border-white/10 pt-6">
+        <button type="button" @click="handleReset" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors">
           Reset
         </button>
         <button
           type="submit"
-          class="rounded-md bg-yellow-500 px-6 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500"
+          class="rounded-md bg-yellow-500 px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500 transition-all"
         >
           Kirim
         </button>
