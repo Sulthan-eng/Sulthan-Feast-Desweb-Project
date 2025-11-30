@@ -1,44 +1,44 @@
-export const appertizerMenu = [
+export const appetizerMenu = [
     {
-        id: 'appertizer1',
+        id: 'appetizer1',
         name: 'Baba Gnaoush',
         description: 'Dip terong panggang lembut dengan tahini, bawang putih, lemon, dan minyak zaitun.',
-        image: '@/assets/images/menu/appertizer-dessert/baba_ghanoush.jpg',
+        image: new URL('@/assets/images/menu/appertizer-dessert/baba_ghanoush.jpg', import.meta.url).href,
         price: "RP 40000",
     },
     {
-        id: 'appertizer2',
+        id: 'appetizer2',
         name: 'Samosa',
         description: 'Kulit tipis goreng berisi daging berbumbu dan sayuran, disajikan hangat dengan saus yoghurt mint.',
-        image: '@/assets/images/menu/appertizer-dessert/samosa.jpeg',
+        image: new URL('@/assets/images/menu/appertizer-dessert/samosa.jpeg', import.meta.url).href,
         price: "RP 30000",
     },
     {
-        id: 'appertizer3',
+        id: 'appetizer3',
         name: 'Risoles',
         description: 'Tersedia 2 rasa : isi telur + Bihun dan telur + sosis',
-        image: '@/assets/images/menu/appertizer-dessert/risol.jpg',
+        image: new URL('@/assets/images/menu/appertizer-dessert/risol.jpg', import.meta.url).href,
         price: "RP 13000",
     },
     {
-        id: 'appertizer4',
+        id: 'appetizer4',
         name: 'Hummus',
         description: 'Dip lembut dari kacang arab tumbuk dengan tahini, bawang putih, lemon, dan minyak zaitun.',
-        image: '@/assets/images/menu/appertizer-dessert/hummus.jpeg',
+        image: new URL('@/assets/images/menu/appertizer-dessert/hummus.jpeg', import.meta.url).href,
         price: "RP 25000",
     },
     {
-        id: 'appertizer5',
+        id: 'appetizer5',
         name: 'Falafel',
         description: 'Bola goreng renyah dari kacang arab dan rempah khas Timur Tengah, disajikan dengan saus tahini.',
-        image: '@/assets/images/menu/appertizer-dessert/falafel.jpeg',
+        image: new URL('@/assets/images/menu/appertizer-dessert/falafel.jpeg', import.meta.url).href,
         price: "RP 35000",
     },
     {
-        id: 'appertizer6',
+        id: 'appetizer6',
         name: 'Kebab',
         description: 'Daging sapi berbumbu khas Timur Tengah, disajikan dengan roti tortilla, sayuran segar, dan saus yoghurt.',
-        image: '@/assets/images/menu/appertizer-dessert/kebab.jpg',
+        image: new URL('@/assets/images/menu/appertizer-dessert/kebab.jpg', import.meta.url).href,
         price: "RP 37000",
     },
 ]
@@ -54,19 +54,19 @@ export const mainCourseMenu = [
                 id: 'mc1',
                 name: 'Nasi Briyani Daging Domba',
                 price: "RP 70000",
-                image: '@/assets/images/menu/maincourse-sidedish/briyani_domba.png'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/briyani_domba.png', import.meta.url).href
             },
             {
                 id: 'mc2',
                 name: 'Nasi Briyani Daging Ayam',
                 price: "RP 55000",
-                image: '@/assets/images/menu/maincourse-sidedish/briyani_ayam.jpg'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/briyani_ayam.jpg', import.meta.url).href           
             },
             {
                 id: 'mc3',
                 name: 'Nasi Briyani Daging Sapi',
                 price: "RP 70000",
-                image: '@/assets/images/menu/maincourse-sidedish/briyani_sapi.png'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/briyani_sapi.png', import.meta.url).href            
             },
         ]
     },
@@ -79,19 +79,19 @@ export const mainCourseMenu = [
                 id: 'mc4',
                 name: 'Nasi Kebuli Daging Domba',
                 price: "RP 70000",
-                image: '@/assets/images/menu/maincourse-sidedish/kebuli_domba.png'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/kebuli_domba.png', import.meta.url).href            
             },
             {
                 id: 'mc5',
                 name: 'Nasi Kebuli Daging Ayam',
                 price: "RP 55000",
-                image: '@/assets/images/menu/maincourse-sidedish/kebuli_ayam.jpg'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/kebuli_ayam.jpg', import.meta.url).href           
             },
             {
                 id: 'mc6',
                 name: 'Nasi Kebuli Daging Sapi',
                 price: "RP 70000",
-                image: '@/assets/images/menu/maincourse-sidedish/kebuli_sapi.png'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/kebuli_sapi.png', import.meta.url).href           
             },
         ]
     },
@@ -104,19 +104,19 @@ export const mainCourseMenu = [
                 id: 'mc7',
                 name: 'Nasi Mandhi Daging Domba',
                 price: "RP 70000",
-                image: '@/assets/images/menu/maincourse-sidedish/mandhi-domba.jpg'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/mandhi-domba.jpg', import.meta.url).href            
             },
             {
                 id: 'mc8',
                 name: 'Nasi Mandhi Daging Ayam',
                 price: "RP 55000",
-                image: '@/assets/images/menu/maincourse-sidedish/mandhi-ayam.jpg'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/mandhi-ayam.jpg', import.meta.url).href           
             },
             {
                 id: 'mc9',
                 name: 'Nasi Mandhi Daging Sapi',
                 price: "RP 70000",
-                image: '@/assets/images/menu/maincourse-sidedish/mandhi-sapi.jpg'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/mandhi-sapi.jpg', import.meta.url).href,           
             },
         ]
     },
@@ -129,19 +129,19 @@ export const mainCourseMenu = [
                 id: 'mc10',
                 name: 'Nasi Kabsah Daging Domba',
                 price: "RP 70000",
-                image: '@/assets/images/menu/maincourse-sidedish/kabsah-domba.jpg'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/kabsah-domba.jpg', import.meta.url).href            
             },
             {
                 id: 'mc11',
                 name: 'Nasi Kabsah Daging Ayam',
                 price: "RP 55000",
-                image: '@/assets/images/menu/maincourse-sidedish/kabsah-ayam.jpg'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/kabsah-ayam.jpg', import.meta.url).href           
             },
             {
                 id: 'mc12',
                 name: 'Nasi Kabsah Daging Sapi',
                 price: "RP 70000",
-                image: '@/assets/images/menu/maincourse-sidedish/kabsah-sapi.jpg'
+                image: new URL('@/assets/images/menu/maincourse-sidedish/kabsah-sapi.jpg', import.meta.url).href           
             },
         ]
     }
@@ -153,28 +153,28 @@ export const sideDishMenu = [
         id: 'sd1',
         name: 'Batata Harra',
         description: 'Kentang goreng berbumbu pedas khas Lebanon, ditumis dengan bawang putih, ketumbar, dan cabai.',
-        image: '@/assets/images/menu/maincourse-sidedish/batata-harra.jpg',
+        image: new URL('@/assets/images/menu/maincourse-sidedish/batata-harra.jpg', import.meta.url).href,
         price: "RP 24000",
     },
     {
         id: 'sd2',
         name: 'French Fries',
         description: 'Kentang goreng renyah disajikan hangat dengan saus tomat dan mayonnaise.',
-        image: '@/assets/images/menu/maincourse-sidedish/kentang_goreng.jpg',
+        image: new URL('@/assets/images/menu/maincourse-sidedish/kentang_goreng.jpg', import.meta.url).href,
         price: "RP 17000",
     },
     {
         id: 'sd3',
         name: 'Roti Maryam',
         description: 'Roti pipih khas Timur Tengah berlapis lembut dan sedikit manis, disajikan hangat dengan kuah kari atau madu.',
-        image: '@/assets/images/menu/maincourse-sidedish/roti-maryam.png',
+        image: new URL('@/assets/images/menu/maincourse-sidedish/roti-maryam.png', import.meta.url).href,
         price: "RP 18000",
     },
     {
         id: 'sd4',
         name: 'Tabbouleh',
         description: 'Salad segar khas Lebanon dari peterseli cincang, tomat, bulgur, dan perasan lemon.',
-        image: '@/assets/images/menu/maincourse-sidedish/tabbouleh.jpg',
+        image: new URL('@/assets/images/menu/maincourse-sidedish/tabbouleh.jpg', import.meta.url).href,
         price: "RP 30000",
     },
 ]
@@ -189,14 +189,14 @@ export const beverageMenu = [
                 id: 'beverage1',
                 name: 'Sobia',
                 description: 'Minuman susu kelapa berpadu rempah manis, disajikan dingin menyegarkan.',
-                image: '@/assets/images/menu/beverage/sobia.jpg',
+                image: new URL('@/assets/images/menu/beverage/sobia.jpg', import.meta.url).href,
                 price: "RP 20000",
             },
             {
                 id: 'beverage2',
                 name: 'Karak Tea',
                 description: 'Teh susu khas Teluk Arab dengan kapulaga dan rasa manis aromatik.',
-                image: '@/assets/images/menu/beverage/karak_tea.jpeg',
+                image: new URL('@/assets/images/menu/beverage/karak_tea.jpeg', import.meta.url).href,
                 price: "RP 15000",
             },
         ]
@@ -208,31 +208,31 @@ export const beverageMenu = [
             {
                 id: 'beverage3',
                 name: 'Americano',
-                image: '@/assets/images/menu/beverage/kopi_americano.jpeg',
+                image: new URL('@/assets/images/menu/beverage/kopi_americano.jpeg', import.meta.url).href,
                 price: "RP 24000",
             },
             {
                 id: 'beverage4',
                 name: 'Espresso',
-                image: '@/assets/images/menu/beverage/kopi_espresso.jpeg',
+                image: new URL('@/assets/images/menu/beverage/kopi_espresso.jpeg', import.meta.url).href,
                 price: "RP 20000",
             },
             {
                 id: 'beverage5',
                 name: 'Latte',
-                image: '@/assets/images/menu/beverage/kopi_latte.jpeg',
+                image: new URL('@/assets/images/menu/beverage/kopi_latte.jpeg', import.meta.url).href,
                 price: "RP 28000",
             },
             {
                 id: 'beverage6',
                 name: 'Cappuccino',
-                image: '@/assets/images/menu/beverage/kopi_cappuccino.jpg',
+                image: new URL('@/assets/images/menu/beverage/kopi_cappuccino.jpg', import.meta.url).href,
                 price: "RP 28000",
             },
             {
                 id: 'beverage7',
                 name: 'Moccacino',
-                image: '@/assets/images/menu/beverage/kopi_moccacino.jpeg',
+                image: new URL('@/assets/images/menu/beverage/kopi_moccacino.jpeg', import.meta.url).href,
                 price: "RP 28000",
             }
         ]
@@ -244,37 +244,37 @@ export const beverageMenu = [
             {
                 id: 'beverage8',
                 name: 'Jus Buah Naga',
-                image: '@/assets/images/menu/beverage/jus_buah_naga.jpg',
+                image: new URL('@/assets/images/menu/beverage/jus_buah_naga.jpg', import.meta.url).href,
                 price: "RP 20000",
             },
             {
                 id: 'beverage9',
                 name: 'Jus Jeruk',
-                image: '@/assets/images/menu/beverage/jus_jeruk.jpg',
+                image: new URL('@/assets/images/menu/beverage/jus_jeruk.jpg', import.meta.url).href,
                 price: "RP 18000",
             },
             {
                 id: 'beverage10',
                 name: 'Jus Alpukat',
-                image: '@/assets/images/menu/beverage/jus_alpukat.jpg',
+                image: new URL('@/assets/images/menu/beverage/jus_alpukat.jpg', import.meta.url).href,
                 price: "RP 23000",
             },
             {
                 id: 'beverage11',
                 name: 'Jus Kurma',
-                image: '@/assets/images/menu/beverage/jus_kurma.jpg',
+                image: new URL('@/assets/images/menu/beverage/jus_kurma.jpg', import.meta.url).href,
                 price: "RP 25000",
             },
             {
                 id: 'beverage12',
                 name: 'Jus Mangga',
-                image: '@/assets/images/menu/beverage/jus_mangga.jpg',
+                image: new URL('@/assets/images/menu/beverage/jus_mangga.jpg', import.meta.url ).href,
                 price: "RP 21000",
             },
             {
                 id: 'beverage13',
                 name: 'Jus Pepaya',
-                image: '@/assets/images/menu/beverage/jus_pepaya.jpg',
+                image: new URL('@/assets/images/menu/beverage/jus_pepaya.jpg', import.meta.url).href,
                 price: "RP 20000",
             },
         ]
@@ -286,31 +286,31 @@ export const beverageMenu = [
             {
                 id: 'beverage14',
                 name: 'Teh Es/Hangat',
-                image: '@/assets/images/menu/beverage/teh.jpeg',
-                price: "RP 8000,"
+                image: new URL('@/assets/images/menu/beverage/teh.jpeg', import.meta.url).href,
+                price: "RP 8000",
             },
             {
                 id: 'beverage15',
                 name: 'Teh Tarik',
-                image: '@/assets/images/menu/beverage/teh_tarik.jpeg',
+                image: new URL('@/assets/images/menu/beverage/teh_tarik.jpeg', import.meta.url).href,
                 price: "RP 14000",
             },
             {
                 id: 'beverage16',
                 name: 'Milo Es/Hangat',
-                image: '@/assets/images/menu/beverage/milo.jpeg',
+                image: new URL('@/assets/images/menu/beverage/milo.jpeg', import.meta.url).href,
                 price: "RP 12000",
             },
             {
                 id: 'beverage17',
                 name: 'Air Putih Es/Hangat',
-                image: '@/assets/images/menu/beverage/air_putih.jpeg',
-                price: "RP 5000,"
+                image: new URL('@/assets/images/menu/beverage/air_putih.jpeg', import.meta.url).href,
+                price: "RP 5000",
             },
             {
                 id: 'beverage18',
                 name: 'Matcha Es/Hangat',
-                image: '@/assets/images/menu/beverage/matcha.jpeg',
+                image: new URL('@/assets/images/menu/beverage/matcha.jpeg', import.meta.url).href,
                 price: "RP 17000",
             },
         ]
@@ -323,35 +323,35 @@ export const dessertMenu = [
         id: 'dessert1',
         name: 'Baklava',
         description: 'Kue lapis khas Turki berisi kacang cincang dan madu, dibalut pastry renyah berlapis-lapis.',
-        image: '@/assets/images/menu/appertizer-dessert/baklava.png',
+        image: new URL('@/assets/images/menu/appertizer-dessert/baklava.png', import.meta.url).href,
         price: "RP 35000",
     },
     {
         id: 'dessert2',
         name: 'Es Pisang Ijo',
         description: 'Hidangan penutup khas Makassar, pisang dibalut adonan hijau lembut dengan sirup merah dan santan dingin.',
-        image: '@/assets/images/menu/appertizer-dessert/Es_pisang_ijo.jpg',
+        image: new URL('@/assets/images/menu/appertizer-dessert/Es_pisang_ijo.jpg', import.meta.url).href,
         price: "RP 22000",
     },
     {
         id: 'dessert3',
         name: 'Kolak Kurma',
         description: 'Kreasi Nusantara dengan sentuhan Timur Tengah — kurma dan pisang dimasak dalam kuah santan manis beraroma pandan.',
-        image: '@/assets/images/menu/appertizer-dessert/kolak_kurma.jpg',
+        image: new URL('@/assets/images/menu/appertizer-dessert/kolak_kurma.jpg', import.meta.url).href,
         price: "RP 25000",
     },
     {
         id: 'dessert4',
         name: 'Kunafa',
         description: 'Dessert khas Timur Tengah dari adonan kadaif renyah berlapis keju lembut, disiram sirup gula mawar hangat.',
-        image: '@/assets/images/menu/appertizer-dessert/kunafa.png',
+        image: new URL('@/assets/images/menu/appertizer-dessert/kunafa.png', import.meta.url).href,
         price: "RP 40000",
     },
     {
         id: 'dessert5',
         name: 'Mahalabia',
         description: 'Puding susu khas Arab yang lembut dan wangi air mawar, disajikan dingin dengan taburan kacang pistachio.',
-        image: '@/assets/images/menu/appertizer-dessert/mahalabia.jpg',
+        image: new URL('@/assets/images/menu/appertizer-dessert/mahalabia.jpg',import.meta.url).href,
         price: "RP 32000",
     },
 ]
