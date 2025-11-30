@@ -1,13 +1,7 @@
-<script setup lang="ts">
-defineProps<{
-  item: {
-    id: string,
-    name: string,
-    description?: string,
-    price: string,
-    image: string
-  }
-}>()
+<script setup>
+defineProps({
+  item: Object
+})
 </script>
 
 <template>
