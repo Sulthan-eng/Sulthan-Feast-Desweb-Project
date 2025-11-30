@@ -1,16 +1,15 @@
-<script setup lang="ts">
+<script setup>
 const emit = defineEmits(['search'])
 
-const handleInput = (e: Event) => {
-    const target = e.target as HTMLInputElement;
-    emit('search', target.value);
+const handleInput = (e) => {
+    emit('search', e.target.value);
 }
 </script>
 
 <template>
     <div class="bg-zinc-900 flex flex-col items-center justify-between pt-15 pb-20">
         <h1 class="font-['Cinzel_Decorative'] text-center font-semibold text-3xl md:text-5xl text-yellow-500">Our Menu</h1>
-        <p class="pt-4 sm:text-md md:text-lg font-medium text-white text-center">
+        <p class="pt-6 sm:text-md md:text-lg font-medium text-white text-center">
             Menyajikan menu makanan serta minuman yang dibuat dengan bahan-bahan asli langsung dari Timur Tengah sehingga memiliki rasa yang khas.
         </p>
 
