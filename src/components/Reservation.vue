@@ -45,17 +45,17 @@ const availableTimes = [
 </script>
 
 <template>
-  <div class="p-4 text-white bg-zinc-900 pt-15 pb-20">
+  <div class="p-4 text-white bg-zinc-900 pt-15 pb-120">
     <h1 class="font-['Cinzel_Decorative'] text-center text-3xl md:text-5xl font-semibold text-yellow-500 space-y-4">
       Reservations
     </h1>
-    <p class="text-center text-gray-300 font-medium mt-5 leading-relaxed px-6 max-w-3xl mx-auto">
+    <p class="text-center text-gray-300 font-medium mt-8 leading-relaxed px-6 max-w-3xl mx-auto">
       Rayakan hari spesial anda di Sulthan Fest dengan masakan, interior, serta
       alunan musik khas Timur Tengah yang akan memberikan anda kenangan yang tak
       terlupakan.
     </p>
 
-    <div v-if="isSubmitted" class="mt-10 p-4 bg-green-800/50 border border-green-600 text-green-100 rounded-md text-center max-w-2xl mx-auto ">
+    <div v-if="isSubmitted" class="mt-12 p-5 bg-green-800/50 border border-green-600 text-green-100 rounded-md text-center max-w-2xl mx-auto ">
       <p class="text-center font-bold text-lg">Reservasi Anda Berhasil Dikirim</p>
       <p>Terimakasih, kami akan segera menghubungi anda melalui Whatsapp/email untuk konfirmasi reservasi anda</p>
     </div>
