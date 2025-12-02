@@ -76,11 +76,11 @@ const isNested = computed (() => {
 
 <template>
     <div class="bg-zinc-900 container mx-auto mb-20">
-        <div class="flex gap-2 md:gap-3 overflow-x-auto w-full pb-4 justify-start md:justify-center mt-5 mb-10 px-1 flex-nowrap">
+        <div class="flex gap-2 md:gap-3 overflow-x-auto w-full p-4 justify-start md:justify-center mt-5 mb-10 flex-nowrap">
             <button v-for="tab in tabs" :key="tab.value" @click="activeTab = tab.id; $emit('update:searchQuery', '') "
-                class="whitespace-nowrap shrink-0 mx-2 rounded-xl border transition-all duration-150 cursor-pointer font-semibold tracking-wide" 
+                class="whitespace-nowrap shrink-0 rounded-xl border transition-all duration-150 cursor-pointer font-semibold tracking-wide" 
                 :class="[
-                    'text-xs px-4 py-2 md:text-base md:px-8 md:py-3',
+                    'text-xs px-4 py-2 md:text-base md:px-8 md:py-4',
 
                     activeTab === tab.id && !searchQuery 
                     ? 'bg-amber-500 text-gray-50 border-amber-500 shadow-lg shadow-amber-500/35' 
