@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router';
 
 <template>
   <section class="bg-zinc-900 text-white py-16 sm:py-24">
-    <div class="container mx-auto px-4 max-w-5xl">
+    <div class="container mx-auto px-4">
 
       <div class="text-center">
         <h2 class="font-['Cinzel_Decorative'] text-3xl md:text-4xl font-bold text-yellow-500">
@@ -15,7 +15,7 @@ import { RouterLink } from 'vue-router';
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-48">
         
         <div class="flex flex-col items-center text-center">
           <img src="@/assets/images/menu/maincourse-sidedish/briyani_domba.png" alt="Nasi Briyani Domba" class="w-full max-w-md rounded-lg shadow-lg aspect-square object-cover">
