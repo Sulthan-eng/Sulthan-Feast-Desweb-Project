@@ -3,7 +3,7 @@ import heroImg from "@/assets/images/heroSection/hero_foto.jpg";
 </script>
 
 <template>
-<div :style="{backgroundImage: `url(${heroImg})`}"  class="relative bg-cover bg-center h-screen">
+<div :style="{backgroundImage: `url(${heroImg})`}"  class="relative bg-cover bg-center min-h-screen">
   <div class="absolute inset-0 bg-[rgba(0,0,0,0.5)]"></div>    
   <div class="relative isolate px-6 pt-14 lg:px-8">
     <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
