@@ -7,11 +7,14 @@ import { mainCourseMenu } from '@/data/menu'
 import { sideDishMenu } from '@/data/menu'
 import { beverageMenu } from '@/data/menu'
 import { dessertMenu } from '@/data/menu'
+import { categoryInfo } from '@/data/menu'
 
 
 const props = defineProps({
     searchQuery: String
 })
+
+const emit = defineEmits(['update:searchQuery'])
 
 const activeTab = ref('appetizer')
 
@@ -72,6 +75,10 @@ const isNested = computed (() => {
     const data = currentMenuData.value;
     return data && data.length > 0 && data[0].items !== undefined;
 })
+
+const currentCategoryInfo =  computed (() => {
+    return categoryInfo[activeTab.value]
+})
 </script>
 
 <template>
@@ -90,6 +97,16 @@ const isNested = computed (() => {
             </button>
         </div>
 
+        <div v-if="!searchQuery && currentCategoryInfo" class="text-center">
+            <h1 class="font-['Cinzel_Decorative'] font-semibold text-3xl md:text-4xl text-white mb-5 tracking-wide">
+                {{ currentCategoryInfo.title }}
+            </h1>
+
+            <p class="text-gray-200 text-sm md:text-base mb-10 leading-relaxed mx-auto px-2">
+                {{ currentCategoryInfo.description }}
+            </p>
+        </div>
+
         <div class="min-h-[300px]"> 
             <div v-if="currentMenuData.length === 0" class="text-center text-gray-400 py-10 font-semibold">
                 Menu tidak tersedia.
@@ -98,7 +115,7 @@ const isNested = computed (() => {
             <div v-else-if="isNested" class="flex flex-col gap-16">
                 <div v-for="(group, index) in currentMenuData" :key="index">
                     
-                    <div class="mb-6 font-serif font-bold text-yellow-500">
+                    <div class="mb-6 mx-2 font-serif font-bold text-yellow-500">
                         <h2 class="text-2xl">
                             {{ group.groupName }}
                         </h2>
