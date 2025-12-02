@@ -7,7 +7,7 @@ const handleInput = (e) => {
 </script>
 
 <template>
-    <div class="bg-zinc-900 flex flex-col items-center justify-between pt-15 pb-10">
+    <div class="bg-zinc-900 flex flex-col items-center justify-between mx-2 pt-15 pb-10">
         <h1 class="font-['Cinzel_Decorative'] text-center font-semibold text-3xl md:text-5xl text-yellow-500">Our Menu</h1>
         <p class="pt-6 sm:text-md md:text-lg font-medium text-white text-center">
             Menyajikan menu makanan serta minuman yang dibuat dengan bahan-bahan asli langsung dari Timur Tengah sehingga memiliki rasa yang khas.
