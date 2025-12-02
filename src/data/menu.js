@@ -1,3 +1,28 @@
+// ... (export data menu lainnya biarkan saja) ...
+
+export const categoryInfo = {
+    appetizer: {
+        title: "APPETIZER",
+        description: "Hidangan Pembuka yang disajikan dengan bahan-bahan berkualitas."
+    },
+    maincourse: {
+        title: "MAIN COURSE",
+        description: "Hidangan utama khas Timur Tengah dengan rempah pilihan yang memanjakan lidah."
+    },
+    sidedish: {
+        title: "SIDE DISH",
+        description: "Pelengkap sempurna untuk menambah kenikmatan santap anda."
+    },
+    beverage: {
+        title: "BEVERAGE",
+        description: "Kesegaran minuman otentik untuk melepas dahaga."
+    },
+    dessert: {
+        title: "DESSERT",
+        description: "Penutup manis yang sempurna untuk mengakhiri petualangan rasa anda."
+    }
+}
+
 export const appetizerMenu = [
     {
         id: 'appetizer1',
