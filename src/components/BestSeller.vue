@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router';
         <h2 class="font-['Cinzel_Decorative'] text-3xl md:text-4xl font-bold text-yellow-500">
           BEST SELLER
         </h2>
-        <p class="text-gray-300 mt-5 mb-12 md:mb-16 text-lg">
+        <p class="text-gray-200 mt-5 mb-12 md:mb-16 text-lg">
           Menu yang paling banyak disukai
         </p>
       </div>
