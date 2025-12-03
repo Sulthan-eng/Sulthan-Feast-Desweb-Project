@@ -3,7 +3,7 @@ import { RouterLink } from "vue-router";
 </script>
 
 <template>
-  <section class="bg-zinc-900 py-16 text-white sm:py-24">
+  <section class="py-16 text-white sm:py-24">
     <div class="container mx-auto px-4">
       <div class="text-center">
         <h2
