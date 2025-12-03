@@ -74,9 +74,9 @@ const maxPhoneDigits = 14;
 </script>
 
 <template>
-  <div class="bg-zinc-900 p-4 pt-15 pb-120 text-white">
+  <div class="p-4 pt-15 pb-120 text-white">
     <h1
-      class="space-y-4 text-center font-['Cinzel_Decorative'] text-3xl font-semibold text-yellow-500 md:text-5xl"
+      class="space-y-4 text-center md:text-5xl"
     >
       Reservations
     </h1>
