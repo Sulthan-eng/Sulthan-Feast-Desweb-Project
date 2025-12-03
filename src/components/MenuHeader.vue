@@ -11,7 +11,7 @@ const handleInput = (e) => {
     class="mx-2 flex flex-col items-center justify-between bg-zinc-900 pt-15 pb-10"
   >
     <h1
-      class="text-center font-['Cinzel_Decorative'] text-3xl font-semibold text-yellow-500 md:text-5xl"
+      class="text-center font-cinzel text-3xl font-semibold text-yellow-500 md:text-5xl"
     >
       Our Menu
     </h1>
