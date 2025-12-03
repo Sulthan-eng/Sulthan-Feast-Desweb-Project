@@ -11,7 +11,7 @@ import { categoryInfo } from '@/data/menu'
 
 
 const props = defineProps({
-    searchQuery: String
+    searchQuery: String  //yammm
 })
 
 const emit = defineEmits(['update:searchQuery'])
