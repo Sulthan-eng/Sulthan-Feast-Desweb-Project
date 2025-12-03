@@ -15,7 +15,6 @@ defineProps({
             <p v-if="item.description" class="text-gray-200 text-xs md:text-sm leading-snug line-clamp-3">{{ item.description }}</p>
             <p v-if="item.price" class="text-gray-200 font-semibold text-sm md:text-md mt-2">{{ item.price }}</p>
         </div>
-        <div class="items center">jaja</div>
     </div>
 </template> 
 
