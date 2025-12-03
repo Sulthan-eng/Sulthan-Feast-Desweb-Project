@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <div
-    class="flex flex-col gap-4 rounded-lg border border-zinc-800 bg-zinc-900 p-3 shadow-md sm:flex-row"
+    class="flex flex-col gap-4 rounded-lg border border-zinc-800 bg-zinc-800 p-3 shadow-md sm:flex-row"
   >
     <div class="h-24 w-28 shrink-0 overflow-hidden rounded-md md:h-32 md:w-32">
       <img
