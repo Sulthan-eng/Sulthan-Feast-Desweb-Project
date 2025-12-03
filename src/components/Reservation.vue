@@ -40,6 +40,7 @@ const handleReset = () => {
   }
 };
 
+
 const availableTimes = [
   "10:00",
   "11:00",
@@ -55,6 +56,7 @@ const availableTimes = [
   "21:00",
 ];
 
+
 const getTodayDate = () => {
   const today = new Date();
   const year = today.getFullYear();
@@ -65,6 +67,10 @@ const getTodayDate = () => {
 }
 
 const minDate = computed(() => getTodayDate());
+
+
+const minPhoneDigits = 10;
+const maxPhoneDigits = 14;
 </script>
 
 <template>
@@ -138,6 +144,9 @@ const minDate = computed(() => getTodayDate());
                   autocomplete="tel"
                   v-model="formData.number"
                   required
+                  minlength="minPhoneDigits"
+                  maxlength="maxPhoneDigits"
+                  pattern="[0-9]"
                   placeholder="08xxxxxxxxxx"
                   class="block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                 />
