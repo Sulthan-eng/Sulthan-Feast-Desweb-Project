@@ -4,9 +4,9 @@ import SnacksDisplayCard from "./SnacksDisplayCard.vue";
 </script>
 
 <template>
-  <section class="bg-zinc-900 pt-15 pb-20 text-white">
+  <section class="pt-15 pb-20 text-white">
     <h1
-      class="text-center font-['Cinzel_Decorative'] text-3xl font-semibold text-yellow-500 md:text-5xl"
+      class="text-center md:text-5xl"
     >
       Snacks
     </h1>

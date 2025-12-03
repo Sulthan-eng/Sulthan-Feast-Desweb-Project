@@ -113,7 +113,7 @@ const currentCategoryInfo = computed(() => {
 
     <div v-if="!searchQuery && currentCategoryInfo" class="text-center">
       <h1
-        class="mb-5 font-cinzel text-3xl font-semibold tracking-wide text-white md:text-4xl"
+        class="mb-5 tracking-wide text-white md:text-4xl"
       >
         {{ currentCategoryInfo.title }}
       </h1>
