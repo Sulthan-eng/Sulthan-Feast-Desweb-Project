@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive } from "vue";
+import { ref, reactive, computed } from "vue";
 
 const formData = reactive({
   name: "",
@@ -54,6 +54,17 @@ const availableTimes = [
   "20:00",
   "21:00",
 ];
+
+const getTodayDate = () => {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const day = String(today.getDate()).padStart(2,'0');
+
+  return `${year}-${month}-${day}`;
+}
+
+const minDate = computed(() => getTodayDate());
 </script>
 
 <template>
@@ -195,8 +206,9 @@ const availableTimes = [
                   type="date"
                   name="date"
                   v-model="formData.date"
+                  :min="minDate"
                   required
-                  class="5 block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white [color-scheme:dark] outline-1 -outline-offset-1 outline-white/10 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
+                  class="5 block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white scheme-dark outline-1 -outline-offset-1 outline-white/10 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                 />
               </div>
             </div>
