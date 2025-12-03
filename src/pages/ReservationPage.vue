@@ -5,11 +5,9 @@ import Reservation from "@/components/Reservation.vue";
 </script>
 
 <template>
-  <Navbar/>
-  <Reservation/>
-  <Footer/>
+  <Navbar />
+  <Reservation />
+  <Footer />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

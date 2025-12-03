@@ -1,22 +1,39 @@
 <script setup>
 defineProps({
-  item: Object
-})
+  item: Object,
+});
 </script>
 
 <template>
-    <div class="flex flex-col sm:flex-row bg-zinc-900 p-3 rounded-lg gap-4 shadow-md border border-zinc-800">
-        <div class="w-28 h-24 md:w-32 md:h-32 shrink-0 overflow-hidden rounded-md">
-            <img :src="item.image" :alt="item.name" class="w-full h-full object-cover rounded-md"/>
-        </div>
-
-        <div class="flex flex-col grow justify-between min-h-24">
-            <h3 class="text-md md:text-lg text-gray-200 font-bold font-serif mb-1 ">{{ item.name }}</h3>
-            <p v-if="item.description" class="text-gray-200 text-xs md:text-sm leading-snug line-clamp-3">{{ item.description }}</p>
-            <p v-if="item.price" class="text-gray-200 font-semibold text-sm md:text-md mt-2">{{ item.price }}</p>
-        </div>
+  <div
+    class="flex flex-col gap-4 rounded-lg border border-zinc-800 bg-zinc-900 p-3 shadow-md sm:flex-row"
+  >
+    <div class="h-24 w-28 shrink-0 overflow-hidden rounded-md md:h-32 md:w-32">
+      <img
+        :src="item.image"
+        :alt="item.name"
+        class="h-full w-full rounded-md object-cover"
+      />
     </div>
-</template> 
 
-<style scoped>
-</style>
+    <div class="flex min-h-24 grow flex-col justify-between">
+      <h3 class="text-md mb-1 font-serif font-bold text-gray-200 md:text-lg">
+        {{ item.name }}
+      </h3>
+      <p
+        v-if="item.description"
+        class="line-clamp-3 text-xs leading-snug text-gray-200 md:text-sm"
+      >
+        {{ item.description }}
+      </p>
+      <p
+        v-if="item.price"
+        class="md:text-md mt-2 text-sm font-semibold text-gray-200"
+      >
+        {{ item.price }}
+      </p>
+    </div>
+  </div>
+</template>
+
+<style scoped></style>

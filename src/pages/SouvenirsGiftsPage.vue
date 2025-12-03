@@ -6,12 +6,10 @@ import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-  <Navbar/>
-  <SnacksDisplayList/>
-  <SouvenirsCraftsList/>
-  <Footer/>
+  <Navbar />
+  <SnacksDisplayList />
+  <SouvenirsCraftsList />
+  <Footer />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
