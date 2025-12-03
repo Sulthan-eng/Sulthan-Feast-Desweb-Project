@@ -13,7 +13,7 @@ defineProps({
     <img
       :src="room.image"
       :alt="room.name"
-      class="w-1/2 rounded-md object-cover shadow-lg"
+      class="w-1/2 rounded-md object-cover"
     />
 
     <div
