@@ -75,7 +75,7 @@ const isMenuOpen = ref(false);
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
       >
-        <div v-if="isMenuOpen" class="w-full lg:block lg:w-auto">
+        <div v-if="isMenuOpen" class="pt-5 w-full lg:block lg:w-auto">
           <ul
             class="lg:bg-neutral-primary flex flex-col bg-black font-medium lg:mt-0 lg:flex-row lg:space-x-12 lg:border-0 lg:p-0 rtl:space-x-reverse"
           >
