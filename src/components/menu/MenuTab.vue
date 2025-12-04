@@ -87,7 +87,7 @@ const currentCategoryInfo = computed(() => {
 </script>
 
 <template>
-  <div class="container mx-auto mb-20 ">
+  <div class="container mx-auto mb-20">
     <div
       class="mt-5 mb-10 flex w-full flex-nowrap justify-start gap-2 overflow-x-auto p-4 md:justify-center md:gap-3"
     >
@@ -113,7 +113,7 @@ const currentCategoryInfo = computed(() => {
 
     <div v-if="!searchQuery && currentCategoryInfo" class="text-center">
       <h2
-        class="font-cinzel font-bold mb-5 tracking-wide text-white md:text-4xl"
+        class="font-cinzel mb-5 font-bold tracking-wide text-white md:text-4xl"
       >
         {{ currentCategoryInfo.title }}
       </h2>

@@ -14,7 +14,10 @@ const handleSearch = (keyword) => {
 
 <template>
   <Navbar />
-  <MenuHeader :searchQuery="searchKeyword" @update:searchQuery="searchKeyword = $event" />
+  <MenuHeader
+    :searchQuery="searchKeyword"
+    @update:searchQuery="searchKeyword = $event"
+  />
   <MenuTab :searchQuery="searchKeyword" />
   <Footer />
 </template>

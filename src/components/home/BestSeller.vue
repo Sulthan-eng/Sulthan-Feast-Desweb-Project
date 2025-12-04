@@ -6,11 +6,7 @@ import { RouterLink } from "vue-router";
   <section class="py-16 text-white sm:py-24">
     <div class="container mx-auto px-4">
       <div class="text-center">
-        <h1
-          class="md:text-4xl"
-        >
-          BEST SELLER
-        </h1>
+        <h1 class="md:text-4xl">BEST SELLER</h1>
         <p class="mt-5 mb-12 text-lg text-gray-200 md:mb-16">
           Menu yang paling banyak disukai
         </p>

@@ -40,7 +40,6 @@ const handleReset = () => {
   }
 };
 
-
 const availableTimes = [
   "10:00",
   "11:00",
@@ -56,26 +55,21 @@ const availableTimes = [
   "21:00",
 ];
 
-
 const getTodayDate = () => {
   const today = new Date();
   const year = today.getFullYear();
-  const month = String(today.getMonth() + 1).padStart(2, '0');
-  const day = String(today.getDate()).padStart(2,'0');
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
 
   return `${year}-${month}-${day}`;
-}
+};
 
 const minDate = computed(() => getTodayDate());
 </script>
 
 <template>
   <div class="p-4 pt-15 pb-120 text-white">
-    <h1
-      class="space-y-4 text-center md:text-5xl"
-    >
-      Reservations
-    </h1>
+    <h1 class="space-y-4 text-center md:text-5xl">Reservations</h1>
     <p
       class="mx-auto mt-8 max-w-3xl px-6 text-center leading-relaxed font-medium text-gray-300"
     >

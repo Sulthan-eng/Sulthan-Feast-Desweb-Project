@@ -12,7 +12,7 @@ import heroImg from "@/assets/images/heroSection/hero_foto.jpg";
       <div class="mx-auto max-w-2xl py-24 sm:py-32 lg:py-48">
         <div class="text-center">
           <h1
-            class="text-4xl font-semibold text-balance tracking-wide text-white sm:text-5xl lg:text-7xl"
+            class="text-4xl font-semibold tracking-wide text-balance text-white sm:text-5xl lg:text-7xl"
           >
             Welcome to Sulthan Feast!
           </h1>

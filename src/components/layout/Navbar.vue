@@ -67,63 +67,69 @@ const isMenuOpen = ref(false);
         </svg>
       </button>
 
-      <div
-        :class="{ block: isMenuOpen, hidden: !isMenuOpen }"
-        class="w-full lg:block lg:w-auto"
+      <Transition
+        enter-active-class="transition-opacity duration-400"
+        enter-from-class="opacity-0"
+        enter-to-class="opacity-200"
+        leave-active-class="transition-opacity duration-200"
+        leave-from-class="opacity-100"
+        leave-to-class="opacity-0"
       >
-        <ul
-          class="lg:bg-neutral-primary flex flex-col bg-black font-medium lg:mt-0 lg:flex-row lg:space-x-12 lg:border-0 lg:p-0 rtl:space-x-reverse"
-        >
-          <li>
-            <RouterLink
-              to="/"
-              active-class="text-yellow-500"
-              class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
-              >Home</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              to="/menu"
-              active-class="text-yellow-500"
-              class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
-              >Menu</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              to="/room"
-              active-class="text-yellow-500"
-              class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
-              >Room</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              to="/souvenirs"
-              active-class="text-yellow-500"
-              class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
-              >Souvenirs & Gifts</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              to="/about"
-              active-class="text-yellow-500"
-              class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
-              >About</RouterLink
-            >
-          </li>
-          <li>
-            <RouterLink
-              to="/reservation"
-              active-class="text-yellow-500"
-              class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
-              >Reservation</RouterLink
-            >
-          </li>
-        </ul>
-      </div>
+        <div v-if="isMenuOpen" class="w-full lg:block lg:w-auto">
+          <ul
+            class="lg:bg-neutral-primary flex flex-col bg-black font-medium lg:mt-0 lg:flex-row lg:space-x-12 lg:border-0 lg:p-0 rtl:space-x-reverse"
+          >
+            <li>
+              <RouterLink
+                to="/"
+                active-class="text-yellow-500"
+                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                >Home</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/menu"
+                active-class="text-yellow-500"
+                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                >Menu</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/room"
+                active-class="text-yellow-500"
+                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                >Room</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/souvenirs"
+                active-class="text-yellow-500"
+                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                >Souvenirs & Gifts</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/about"
+                active-class="text-yellow-500"
+                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                >About</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                to="/reservation"
+                active-class="text-yellow-500"
+                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                >Reservation</RouterLink
+              >
+            </li>
+          </ul>
+        </div>
+      </Transition>
     </div>
   </nav>
 </template>
