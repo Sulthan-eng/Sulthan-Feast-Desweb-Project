@@ -1,6 +1,6 @@
 <script setup>
 import { room } from "@/data/room";
-import RoomDisplayCard from "@/components/RoomDisplayCard.vue";
+import RoomDisplayCard from "@/components/room/RoomDisplayCard.vue";
 </script>
 
 <template>
