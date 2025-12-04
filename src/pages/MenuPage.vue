@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import MenuHeader from "@/components/MenuHeader.vue";
-import MenuTab from "@/components/MenuTab.vue";
-import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue";
+import MenuHeader from "@/components/menu/MenuHeader.vue";
+import MenuTab from "@/components/menu/MenuTab.vue";
+import Navbar from "@/components/layout/Navbar.vue";
+import Footer from "@/components/layout/Footer.vue";
 
 const searchKeyword = ref("");
 

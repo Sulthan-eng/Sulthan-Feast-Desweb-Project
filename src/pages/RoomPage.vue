@@ -1,7 +1,7 @@
 <script setup>
-import Navbar from "@/components/Navbar.vue";
-import RoomDisplayList from "@/components/RoomDisplayList.vue";
-import Footer from "@/components/Footer.vue";
+import Navbar from "@/components/layout/Navbar.vue";
+import RoomDisplayList from "@/components/room/RoomDisplayList.vue";
+import Footer from "@/components/layout/Footer.vue";
 </script>
 
 <template>
