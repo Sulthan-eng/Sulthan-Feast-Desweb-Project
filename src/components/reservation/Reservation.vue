@@ -67,10 +67,6 @@ const getTodayDate = () => {
 }
 
 const minDate = computed(() => getTodayDate());
-
-
-const minPhoneDigits = 10;
-const maxPhoneDigits = 14;
 </script>
 
 <template>
@@ -144,11 +140,7 @@ const maxPhoneDigits = 14;
                   autocomplete="tel"
                   v-model="formData.number"
                   required
-                  minlength="minPhoneDigits"
-                  maxlength="maxPhoneDigits"
-                  pattern="[0-9]"
                   placeholder="08xxxxxxxxxx"
-                  title="Masukkan angka"
                   class="block w-full rounded-md bg-zinc-950/50 px-3 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-yellow-500 sm:text-sm"
                 />
               </div>
