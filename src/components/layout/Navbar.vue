@@ -67,23 +67,76 @@ const isMenuOpen = ref(false);
         </svg>
       </button>
 
+      <!-- desktop -->
+      <div class="hidden lg:block lg:w-auto">
+        <ul class="flex flex-row space-x-12 font-medium text-white">
+          <li>
+            <RouterLink
+              to="/"
+              active-class="text-yellow-500"
+              class="hover:text-yellow-300"
+              >Home</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/menu"
+              active-class="text-yellow-500"
+              class="hover:text-yellow-300"
+              >Menu</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/room"
+              active-class="text-yellow-500"
+              class="hover:text-yellow-300"
+              >Room</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/souvenirs"
+              active-class="text-yellow-500"
+              class="hover:text-yellow-300"
+              >Souvenirs & Gifts</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/about"
+              active-class="text-yellow-500"
+              class="hover:text-yellow-300"
+              >About</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/reservation"
+              active-class="text-yellow-500"
+              class="hover:text-yellow-300"
+              >Reservation</RouterLink
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- mobile -->
       <Transition
-        enter-active-class="transition-opacity duration-400"
+        enter-active-class="transition-opacity duration-300"
         enter-from-class="opacity-0"
-        enter-to-class="opacity-200"
+        enter-to-class="opacity-100"
         leave-active-class="transition-opacity duration-200"
         leave-from-class="opacity-100"
         leave-to-class="opacity-0"
       >
-        <div v-if="isMenuOpen" class="pt-5 w-full lg:block lg:w-auto">
-          <ul
-            class="lg:bg-neutral-primary flex flex-col bg-black font-medium lg:mt-0 lg:flex-row lg:space-x-12 lg:border-0 lg:p-0 rtl:space-x-reverse"
-          >
+        <div v-if="isMenuOpen" class="w-full lg:hidden">
+          <ul class="mt-3 flex flex-col space-y-2 bg-black p-3 font-medium">
             <li>
               <RouterLink
                 to="/"
                 active-class="text-yellow-500"
-                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                class="block px-3 py-2 hover:text-yellow-300"
                 >Home</RouterLink
               >
             </li>
@@ -91,7 +144,7 @@ const isMenuOpen = ref(false);
               <RouterLink
                 to="/menu"
                 active-class="text-yellow-500"
-                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                class="block px-3 py-2 hover:text-yellow-300"
                 >Menu</RouterLink
               >
             </li>
@@ -99,7 +152,7 @@ const isMenuOpen = ref(false);
               <RouterLink
                 to="/room"
                 active-class="text-yellow-500"
-                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                class="block px-3 py-2 hover:text-yellow-300"
                 >Room</RouterLink
               >
             </li>
@@ -107,7 +160,7 @@ const isMenuOpen = ref(false);
               <RouterLink
                 to="/souvenirs"
                 active-class="text-yellow-500"
-                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                class="block px-3 py-2 hover:text-yellow-300"
                 >Souvenirs & Gifts</RouterLink
               >
             </li>
@@ -115,7 +168,7 @@ const isMenuOpen = ref(false);
               <RouterLink
                 to="/about"
                 active-class="text-yellow-500"
-                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                class="block px-3 py-2 hover:text-yellow-300"
                 >About</RouterLink
               >
             </li>
@@ -123,7 +176,7 @@ const isMenuOpen = ref(false);
               <RouterLink
                 to="/reservation"
                 active-class="text-yellow-500"
-                class="block px-3 py-2 text-white hover:text-yellow-300 lg:bg-transparent lg:p-0"
+                class="block px-3 py-2 hover:text-yellow-300"
                 >Reservation</RouterLink
               >
             </li>
