@@ -14,7 +14,7 @@ const clear = (e) => {
 
 <template>
   <div class="mx-2 flex flex-col items-center justify-between pt-15 pb-10">
-    <h1 class="text-center md:text-5xl">Our Menu</h1>
+    <h1 class="text-center">Our Menu</h1>
     <p class="sm:text-md pt-6 text-center font-medium text-white md:text-lg">
       Menyajikan menu makanan serta minuman yang dibuat dengan bahan-bahan asli
       langsung dari Timur Tengah sehingga memiliki rasa yang khas.

@@ -5,7 +5,7 @@ import SnacksDisplayCard from "./SnacksDisplayCard.vue";
 
 <template>
   <section class="pt-15 pb-20 text-white">
-    <h1 class="text-center md:text-5xl">Snacks</h1>
+    <h1 class="text-center">Snacks</h1>
     <p
       class="mx-auto mt-5 max-w-4xl px-6 text-center leading-relaxed font-medium text-gray-300"
     >

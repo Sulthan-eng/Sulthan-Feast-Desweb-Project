@@ -69,7 +69,7 @@ const minDate = computed(() => getTodayDate());
 
 <template>
   <div class="p-4 pt-15 pb-120 text-white">
-    <h1 class="space-y-4 text-center md:text-5xl">Reservations</h1>
+    <h1 class="space-y-4 text-center">Reservations</h1>
     <p
       class="mx-auto mt-8 max-w-3xl px-6 text-center leading-relaxed font-medium text-gray-300"
     >
