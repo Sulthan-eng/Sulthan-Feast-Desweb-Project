@@ -19,7 +19,7 @@ import { RouterLink } from "vue-router";
             alt="Nasi Briyani Domba"
             class="aspect-square w-full max-w-md rounded-lg object-cover shadow-lg"
           />
-          <h3 class="mt-5 text-xl font-normal">Nasi Briyani Domba</h3>
+          <h3 class="mt-5 text-xl">Nasi Briyani Domba</h3>
         </div>
 
         <div class="flex flex-col items-center text-center">
@@ -28,7 +28,7 @@ import { RouterLink } from "vue-router";
             alt="Nasi Kebuli Ayam"
             class="aspect-square w-full max-w-md rounded-lg object-cover shadow-lg"
           />
-          <h3 class="mt-5 text-xl font-normal">Nasi Kebuli Ayam</h3>
+          <h3 class="mt-5 text-xl">Nasi Kebuli Ayam</h3>
         </div>
 
         <div class="flex flex-col items-center text-center">
@@ -37,7 +37,7 @@ import { RouterLink } from "vue-router";
             alt="Kebab"
             class="aspect-square w-full max-w-md rounded-lg object-cover shadow-lg"
           />
-          <h3 class="mt-5 text-xl font-normal">Kebab</h3>
+          <h3 class="mt-5 text-xl">Kebab</h3>
         </div>
 
         <div class="flex flex-col items-center text-center">
@@ -46,7 +46,7 @@ import { RouterLink } from "vue-router";
             alt="Karak Tea"
             class="aspect-square w-full max-w-md rounded-lg object-cover shadow-lg"
           />
-          <h3 class="mt-5 text-xl font-normal">Karak Tea</h3>
+          <h3 class="mt-5 text-xl">Karak Tea</h3>
         </div>
       </div>
 
