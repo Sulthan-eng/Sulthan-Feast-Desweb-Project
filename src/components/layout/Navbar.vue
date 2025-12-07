@@ -121,7 +121,7 @@ const isMenuOpen = ref(false);
         </ul>
       </div>
 
-      <!-- mobile -->
+      <!-- mobile tab -->
       <Transition
         enter-active-class="transition-opacity duration-300"
         enter-from-class="opacity-0"
