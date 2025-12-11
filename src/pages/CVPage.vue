@@ -1,5 +1,6 @@
 <script setup>
 import CVList from '@/components/cots/CVList.vue';
+import Footer from '@/components/layout/Footer.vue';
 import Navbar from '@/components/layout/Navbar.vue';
 
 </script>
@@ -7,4 +8,5 @@ import Navbar from '@/components/layout/Navbar.vue';
 <template>
     <Navbar/>
     <CVList/>
+    <Footer/>
 </template>
