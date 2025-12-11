@@ -5,6 +5,7 @@ import RoomPage from "@/pages/RoomPage.vue";
 import SouvenirsGiftsPage from "@/pages/SouvenirsGiftsPage.vue";
 import AboutUsPage from "@/pages/AboutUsPage.vue";
 import ReservationPage from "@/pages/ReservationPage.vue";
+import CVPage from "@/pages/CVPage.vue";
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     name: "Reservation",
     component: ReservationPage,
   },
+  {
+    path: "/cv",
+    name: "CV",
+    component: CVPage,
+  }
 ];
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
