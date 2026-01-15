@@ -5,7 +5,6 @@ import RoomPage from "@/pages/RoomPage.vue";
 import SouvenirsGiftsPage from "@/pages/SouvenirsGiftsPage.vue";
 import AboutUsPage from "@/pages/AboutUsPage.vue";
 import ReservationPage from "@/pages/ReservationPage.vue";
-import CVPage from "@/pages/CVPage.vue";
 
 const routes = [
   {
