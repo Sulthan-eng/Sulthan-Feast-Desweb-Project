@@ -118,14 +118,6 @@ const isMenuOpen = ref(false);
               >Reservation</RouterLink
             >
           </li>
-          <li>
-            <RouterLink
-              to="/cv"
-              active-class="text-yellow-500"
-              class="hover:text-yellow-300"
-              >CV</RouterLink
-            >
-          </li>
         </ul>
       </div>
 
@@ -188,14 +180,6 @@ const isMenuOpen = ref(false);
                 >Reservation</RouterLink
               >
             </li>
-            <li>
-              <RouterLink
-                to="/cv"
-                active-class="text-yellow-500"
-                class="hover:text-yellow-300"
-                >CV</RouterLink
-              >
-          </li>
           </ul>
         </div>
       </Transition>
