@@ -38,11 +38,6 @@ const routes = [
     name: "Reservation",
     component: ReservationPage,
   },
-  {
-    path: "/cv",
-    name: "CV",
-    component: CVPage,
-  }
 ];
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
