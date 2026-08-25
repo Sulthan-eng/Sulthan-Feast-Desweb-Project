@@ -1,6 +1,6 @@
-# sulthan-feast-desweb
+# Sulthan Feast
 
-This template should help get you started developing with Vue 3 in Vite.
+Sulthan Feast is my project in web design subject. This is only a frontend website, without backend.
 
 ## Recommended IDE Setup
 
